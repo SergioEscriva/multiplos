@@ -3,6 +3,7 @@ package dev.sergioescriva;
 public class FactorPrimo {
     public static void main(String[] args) {
         factores();
+        otro();
     }
 
     public static void factores() {
@@ -38,6 +39,18 @@ public class FactorPrimo {
 
         }
         System.out.println("Factor primo más grande: " + (primoImpar));
+    }
+
+    public static void otro() {
+        long number = 600851475143L;
+        for (int i = 3; i <= (number / 2); i++) {
+            if (number % i == 0) {
+                number = number / i;
+            }
+
+        }
+
+        System.out.println(number);
     }
 
 }
