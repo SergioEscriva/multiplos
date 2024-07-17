@@ -18,16 +18,16 @@ public class FactorPrimo {
 
         Long end = 600851475143L;
 
-        int multiplo = 2;
+        Integer multiplo;
 
-        for (int i = 0; i <= end; i++) {
-            multiplo++;
+        for (multiplo = 2; multiplo < end; multiplo++) {
+
             while (end % multiplo == 0) {
                 end /= multiplo;
-
             }
+
         }
-        System.out.println("Factor primo más grande: " + multiplo);
+        System.out.println("Factor primo más grande: " + (multiplo));
     }
 
 }
