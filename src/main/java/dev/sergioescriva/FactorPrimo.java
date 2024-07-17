@@ -10,24 +10,34 @@ public class FactorPrimo {
         /*
          * Encontrar el factor primo más grande de 120:
          * 
-         * a) 120 es divisible por 2, por lo que dividimos: 120 ÷ 2 = 60.
-         * b)60 es divisible por 2, por lo que dividimos: 60 ÷ 2 = 30.
-         * c)30 no es divisible por 2, pasamos al siguiente primo impar: 3. 30 es
-         * ...
+         * se epieza por 2 como excepción y luego números primos impares.
+         * Tenemos un número 120, que es divisible por 2, por lo que dividimos:
+         * 120/2=60.
+         * 60 es divisible por 2, por lo que dividimos: 60/2 = 30.
+         * 30 no es divisible por 2, pasamos al siguiente primo impar que es 3: 30/3 =
+         * 10
+         * 10 no es divisible por 3, pasamos al siguiente primo impar que es 5: 10/5 = 2
+         * 2 que ya no se puede dividir... Así que el máximo es 5
          */
 
-        Long end = 600851475143L;
+        // Número a factorizar
+        Long numero = 600851475143L;
 
-        Integer multiplo;
+        // primoImpar por el que dividir el número
+        Integer primoImpar;
 
-        for (multiplo = 2; multiplo < end; multiplo++) {
+        // Iteramos mientras que primoImpar sea menor que los resultados de la división.
+        for (primoImpar = 2; primoImpar < numero; primoImpar++) {
 
-            while (end % multiplo == 0) {
-                end /= multiplo;
+            // Mientras numero sea múltiplo del númeroImpar se divide por el valor de ese
+            // númeroImpar.
+            // en caso contrario cambiamos al siguiente numeroImpar.
+            while (numero % primoImpar == 0) {
+                numero /= primoImpar;
             }
 
         }
-        System.out.println("Factor primo más grande: " + (multiplo));
+        System.out.println("Factor primo más grande: " + (primoImpar));
     }
 
 }
