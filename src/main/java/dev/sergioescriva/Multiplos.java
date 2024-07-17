@@ -1,6 +1,6 @@
-package com.example;
+package dev.sergioescriva;
 
-public class Main {
+public class Multiplos {
     public static void main(String[] args) {
         numeros();
     }
