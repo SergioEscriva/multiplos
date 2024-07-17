@@ -1,18 +1,11 @@
 package dev.sergioescriva;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class FactorPrimo {
     public static void main(String[] args) {
         factores();
     }
 
     public static void factores() {
-
-        int numero = 29;
-        List<Integer> numberList = new ArrayList<>();
-        List<Integer> numberListno = new ArrayList<>();
 
         /*
          * Encontrar el factor primo más grande de 120:
