@@ -9,19 +9,20 @@ public class DifSumacuadrados {
 
         for (int numero = 0; numero <= end; numero++) {
 
-            // suma de los cuadrados
+            // suma de los cuadrados de cada número
             sumNumbers += numero * numero;
 
-            // suma de los números
+            // suma de todos los números
             sumCuadrado += numero;
 
         }
 
-        // cuadrado de la suma de los números
+        // cuadrado de la suma de todos los números
         int cuadrado = sumCuadrado * sumCuadrado;
 
         // diferencia de los resultados de los cuadrados.
         int dif = cuadrado - sumNumbers;
+
         System.out.println("Suma Cuadrados: " + sumNumbers + " | Cuadrado de la Suma: " + sumCuadrado * sumCuadrado
                 + " | Diferecina Cuadrados:  " + dif);
     }
