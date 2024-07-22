@@ -23,7 +23,8 @@ public class DifSumacuadrados {
         // diferencia de los resultados de los cuadrados.
         int dif = cuadrado - sumNumbers;
 
-        System.out.println("Suma Cuadrados: " + sumNumbers + " | Cuadrado de la Suma: " + sumCuadrado * sumCuadrado
+        System.out.println("De los " + end + " primeros números, la Suma de Cuadrados: " + sumNumbers
+                + " | Cuadrado de la Suma: " + sumCuadrado * sumCuadrado
                 + " | Diferecina Cuadrados:  " + dif);
     }
 }
