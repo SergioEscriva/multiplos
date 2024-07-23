@@ -1,6 +1,6 @@
 package dev.sergioescriva;
 
-public class SmallMultiple {
+public class SmallMultiple5 {
     public static void main(String[] args) {
 
     }

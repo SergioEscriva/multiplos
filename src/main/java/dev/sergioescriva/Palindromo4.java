@@ -1,6 +1,6 @@
 package dev.sergioescriva;
 
-public class Palindromo {
+public class Palindromo4 {
     public static void main(String[] args) {
 
         // Guardaremos el valor más alto en cada iteración.

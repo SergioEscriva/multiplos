@@ -1,6 +1,6 @@
 package dev.sergioescriva;
 
-public class FactorPrimo {
+public class FactorPrimo3 {
     public static void main(String[] args) {
         factores();
         otro();

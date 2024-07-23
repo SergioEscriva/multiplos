@@ -1,6 +1,6 @@
 package dev.sergioescriva;
 
-public class DifSumacuadrados {
+public class DifSumacuadrados6 {
     public static void main(String[] args) {
 
         int end = 100;

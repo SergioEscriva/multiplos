@@ -1,6 +1,6 @@
 package dev.sergioescriva;
 
-public class Multiplos {
+public class Multiplos1 {
     public static void main(String[] args) {
         numeros();
     }
